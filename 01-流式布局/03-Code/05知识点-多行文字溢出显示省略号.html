@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+         * {
+             margin: 0;
+             padding: 0;
+         }
+
+         .box {
+             width: 200px;
+             height: 60px;
+             border: 1px solid red;
+             margin: 10px;
+             line-height: 30px;
+             /* 将溢出的内容隐藏 */
+             overflow: hidden;
+             /* 设置文字溢出显示省略号 
+                解决单行文字
+             */
+            text-overflow: ellipsis;
+
+            /* 控制要显示2行 */
+            -webkit-line-clamp: 2;
+
+            /* 设置文字垂直显示 */
+            -webkit-box-orient: vertical;
+
+            /* 设置盒子要是一个弹性盒子 */
+            display: -webkit-box;
+         }
+    </style>
+</head>
+<body>
+    
+
+     <div class="box">
+         阿斯蒂芬阿斯蒂芬撒地方大师傅大师傅范德萨发的阿凡达阿斯蒂芬大大撒地方阿道夫阿道夫阿达大
+     </div>
+</body>
+</html>

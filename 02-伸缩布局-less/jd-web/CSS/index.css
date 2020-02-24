@@ -1,0 +1,307 @@
+
+
+/* 主体盒子 */
+.main_body {
+    width: 100%;
+    /* 当前盒子的最大宽度是768px */
+    max-width: 768px;
+    /* 当前盒子的最小宽度是320px */
+    min-width: 320px;
+    padding-bottom: 40px;
+
+    margin: 0 auto;
+}
+
+/* 顶部搜索区域 */
+.top_search {
+    width: 100%;
+    max-width: 768px;
+    min-width: 320px;
+    height: 40px;
+    background: rgba(201, 21, 35, 1);
+    position: fixed;
+    left: 50%;
+    top: 0;
+    /* margin-left: -50%; */
+    /* 变形 : 老师后面会讲，大家先记住这种用法*/
+    transform: translate(-50%);
+    padding: 0 60px;
+    box-sizing: border-box;
+
+}
+
+
+/* 左侧logo部分 */
+.left_logo {
+    width: 56px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../img/jd-sprites.png') no-repeat  0  -109px;
+    /* 改变背景图片大小 */
+    background-size: 200px 200px;
+    margin-top: 8px;
+}
+
+.right_login {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 40px;
+}
+
+.right_login a {
+    color: #fff;
+}
+
+
+.middle_search {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    position: relative;
+}
+
+
+.middle_search input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.bg {
+    width: 18px;
+    height: 21px;
+    display: block;
+    background: url('../img/jd-sprites.png') no-repeat  -59px -110px;
+      /* 改变背景图片大小 */
+    background-size: 200px 200px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+
+
+/* 广告区域 */
+.banner {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/* 主体导航区域 */
+.m_nav {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.m_nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.m_nav li img {
+     width: 44px;
+}
+
+.m_nav li p {
+    margin: 10px 0;
+}
+
+
+
+/* 秒杀区域 */
+.fs_kill {
+    width: 100%;
+
+}
+
+
+.fs_kill .top_title {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.clock {
+    width: 18px;
+    height: 22px;
+    background: url('../img/jd-sprites.png') no-repeat  -84px -110px;
+    background-size: 200px 200px;
+    margin-right: 10px;
+}
+
+.top_title strong {
+    margin-right: 10px;
+}
+
+.top_title li {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.top_title .dotted {
+    border-radius: 0;
+    background-color: #fff;
+}
+
+
+/* 商品列表 */
+.products_list {
+    width: 100%;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+
+.products_list li {
+    float: left;
+    width: 33.33%;
+     text-align: center;
+}
+
+
+.products_list li img {
+     width: 100%;
+}
+
+
+.products_list li strong {
+    display: block;
+}
+
+
+
+/* 商品展示 */
+.products_show {
+    width: 100%;
+}
+
+
+.products_show li {
+     float: left;
+     width: 50%;
+     padding: 0 5px;
+     box-sizing: border-box;
+}
+
+
+.products_show li img {
+    width: 100%;
+}
+
+
+.products_show li p {
+
+    /* 设置文字换行效果 
+     word-break: break-all; 
+     让文字在容器的末尾处自动换行
+    */
+    word-break: break-all;
+
+    height: 40px;
+
+    border-bottom: 2px solid #ccc;
+
+    overflow: hidden;
+    /* 文字溢出显示省略号 */
+    text-overflow: ellipsis;
+
+
+      /* 控制要显示2行 */
+      -webkit-line-clamp: 2;
+
+      /* 设置文字垂直显示 */
+      -webkit-box-orient: vertical;
+
+      /* 设置盒子要是一个弹性盒子 */
+      display: -webkit-box;
+
+}
+
+
+
+/* 底部区域 */
+.footer {
+    width: 100%;
+    background-color: #e4e4e4;
+}
+.top_ffoer {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.middle_footer {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.middle_footer a {
+     width: 25%;
+     display: block;
+     float: left;
+     text-align: center;
+}
+
+.bot_footer {
+     width: 100%;
+     padding: 5px 0;
+}
+
+.bot_footer a {
+    width: 33.33%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.bot_footer  span {
+     width: 33px;
+     height: 33px;
+     display: block;
+     background: url('../img/jd-sprites.png') no-repeat 0 -70px;
+     background-size: 200px 200px;
+
+     margin: 0 auto;
+}
+
+
+/* 底部固定盒子 */
+.fixed_box {
+    width: 100%;
+    max-width: 768px;
+    min-width: 320px;
+    height: 40px;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    /* 变形 */
+    transform: translate(-50%);
+    bottom: 0;
+}
+
+.fixed_box a {
+    width: 20%;
+    height: 40px;
+    display: block;
+    float: left;
+}
+.fixed_box img {
+     /* width: 100%; */
+     height: 100%;
+}

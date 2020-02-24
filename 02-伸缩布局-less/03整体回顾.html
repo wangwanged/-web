@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        .box {
+             width: 500px;
+             height: 500px;
+             border: 1px solid red;
+             margin: 50px auto;
+
+             /* 设置为伸缩盒子 */
+             display: flex;
+
+             /* 设置元素在主轴方向的对齐方式 */
+             /* justify-content: space-between; */
+
+             /* 设置元素在侧轴对齐方式 */
+             /* align-items: center; */
+
+
+             /* 设置主轴方向 */
+             /* flex-direction: column; */
+
+
+             /* 设置元素换行 */
+             flex-wrap: wrap;
+             /* 设置元素换行后的对齐方式 */
+             align-content: stretch;
+             /* padding: 100px; */
+        }
+
+        .one {
+             height: 100px;
+             background-color: red;
+             /* margin: 20px; */
+             flex: 1;
+        }
+
+        .two {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* flex: 0; */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+         <div class="one"></div>
+         <div class="two"></div>
+    </div>
+</body>
+</html>

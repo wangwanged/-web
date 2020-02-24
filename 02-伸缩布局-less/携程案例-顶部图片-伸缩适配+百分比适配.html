@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top_img {
+             width: 100%;
+             display: flex;
+        }
+
+        .top_img a {
+            flex: 1;
+        }
+        .top_img img {
+            width: 100%;
+        }
+
+
+        /* 中间盒子 */
+        .middle_box {
+            width: 100%;
+            height: 420px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            /* 设置主轴的方向 */
+            flex-direction: column;
+        }
+        .item {
+            /* flex: 1; */
+            height: 90px;
+            background-color: pink;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .public {
+            flex: 1;
+            height: 90px;
+            border-right: 1px solid red;
+        }
+
+        .right {
+            border-right: 0;
+        }
+
+        .top {
+            height: 50%;
+            border-bottom: 1px solid #fff;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 45px;
+        }
+
+        .bot {
+             height: 50%;
+             text-align: center;
+             line-height: 45px;
+        }
+
+
+        /* 底部区域 */
+        .footer {
+            width: 100%;
+
+            display: flex;
+
+            /* 为了让子元素独占一行显示 */
+            flex-direction: column;
+        }
+
+
+        .top_footer {
+
+        }
+
+        .top_footer img {
+             width: 50%;
+             float: left;
+        }
+        .bot_footer {
+            border-top: 1px solid #ccc;
+            padding: 20px 0;
+            display: flex;
+        }
+
+        .bot_footer a {
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- 顶部图片盒子 -->
+    <div class="top_img">
+        <a href="#">
+            <img src="img/banner.jpg" alt="">
+        </a>
+    </div>
+
+    <!-- 中间盒子 -->
+    <div class="middle_box">
+        <div class="item">
+            <div class="public left"></div>
+
+            <div class="public middle">
+                <div class="top">携程首页</div>
+                <div class="bot">携程首页</div>
+            </div>
+
+            <div class="public right">
+                <div class="top">携程首页</div>
+                <div class="bot">携程首页</div>
+            </div>
+        </div>
+       <div class="item">
+           <div class="public left"></div>
+
+           <div class="public middle">
+               <div class="top">携程首页</div>
+               <div class="bot">携程首页</div>
+           </div>
+
+           <div class="public right">
+               <div class="top">携程首页</div>
+               <div class="bot">携程首页</div>
+           </div>
+       </div>
+
+       <div class="item">
+           <div class="public left"></div>
+
+           <div class="public middle">
+               <div class="top">携程首页</div>
+               <div class="bot">携程首页</div>
+           </div>
+
+           <div class="public right">
+               <div class="top">携程首页</div>
+               <div class="bot">携程首页</div>
+           </div>
+       </div>
+
+       <div class="item">
+           <div class="public left"></div>
+
+           <div class="public middle">
+               <div class="top">携程首页</div>
+               <div class="bot">携程首页</div>
+           </div>
+
+           <div class="public right">
+               <div class="top">携程首页</div>
+               <div class="bot">携程首页</div>
+           </div>
+       </div>
+    </div>
+
+    <!-- 底部盒子 -->
+    <div class="footer">
+
+         <div class="top_footer">
+             <img src="img/extra_1.png" alt="">
+             <img src="img/extra_2.png" alt="">
+         </div>
+
+         <div class="bot_footer">
+             <a href="#">联系我们</a>
+             <a href="#">联系我们</a>
+             <a href="#">联系我们</a>
+         </div>
+    </div>
+</body>
+</html>

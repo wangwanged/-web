@@ -1,0 +1,83 @@
+/* 父容器 */
+.main_body {
+    width: 100%;
+    margin:0 auto;
+}
+/* 搜索区域 */
+.search {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #c91523;
+    margin:0 auto;
+}
+.search div:nth-child(1){
+    float:left;
+    width: 56px;
+    height: 40px;
+    /* background-color: gray ; */
+    background: url(../img/jd-sprites.png) no-repeat 0 -104px;
+    background-size: 200px 200px;
+    margin: 5px 0 0 0;
+    box-sizing: border-box;
+}
+.search div:nth-child(3) {
+    float:right;
+    width: 60px;
+    height: 40px;
+    font-size:16px;
+    text-align: center;
+    padding:7px 0 0 0;
+    box-sizing: border-box;
+    color:#fff;
+}
+.search div:nth-child(2){
+    flex:1;
+    background-color: #fff;
+    width: 255.2px;
+    height: 30px;
+    margin:5px 0 0 10px;
+    border-radius: 30px;
+    
+}
+.search div:nth-child(2) div {
+    width: 25px;
+    height: 25px;
+    margin-left:5px;
+    background: url(../img/jd-sprites.png) no-repeat -55px -110px;
+    background-size:200px 200px;
+}
+.search div:nth-child(2) .buyer {
+    margin-top:7px;
+}
+/* 图片区域 */
+.bigimage {
+    width: 100%;
+    margin:0 auto;
+}
+
+/* 导航区域 */
+.nav {
+    display: flex;
+    width: 100%;
+    padding:10px;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.nav div {
+    flex:25%;
+   text-align: center;
+   padding: 7px 0;
+}
+.nav img {
+    width: 44px;
+    height: 44px;
+    margin-bottom:10px;
+    
+}
+.nav span{
+    display: block;
+    font-size:14px;
+    color:#999;
+    
+}

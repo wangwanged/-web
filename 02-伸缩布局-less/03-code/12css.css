@@ -1,0 +1,22 @@
+/* div {
+    width: 200px + 300px;
+} */
+
+/* <div  class="nav">
+   <ul>
+      <li>
+         <a> 导航文字 </a>
+
+         <span>文字</span>
+      </li>
+   </ul>
+</div> */
+
+
+.nav a {
+    color: red;
+}
+
+.nav span {
+    color: red;
+}

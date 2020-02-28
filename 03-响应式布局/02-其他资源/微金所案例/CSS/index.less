@@ -1,0 +1,437 @@
+
+@import 'base.less';
+
+
+// 主体默认是大屏幕
+
+.m_body {
+	.fix_bar {
+			display: none;
+	}
+	// 顶部导航
+	.top_header {
+		height: 57px;
+		line-height: 57px;
+		border-bottom: 1px solid #ccc;
+		//顶部导航版心
+		.top_wrap {
+			width: 980px;
+			margin: 0 auto;
+			ul {
+
+				overflow: hidden;
+			}
+			li {
+				float: left;
+				padding: 0 40px;
+				border-right: 1px solid #ccc;
+			}
+
+			li:last-child {
+				border-right: 0 none;
+			}
+
+			.regest {
+				padding: 5px  10px;
+				background-color: red;
+				color: #fff;
+				border-radius: 5px;
+				margin-right: 10px;
+			}
+		}
+	}
+	//主体导航
+	.top_nav {
+		height: 64px;
+		line-height: 64px;
+		border-bottom: 1px solid #ccc;
+		.new_wrap {
+			width: 980px;
+			height: 100%;
+			margin: 0 auto;
+			
+			ul {
+				overflow: hidden;
+			}
+			li {
+				float: left;
+			}
+			li:last-child {
+				float: right;
+				margin-right: 115px;
+			}
+			li:first-child img {
+				width: 145px;
+				vertical-align: middle;
+			}
+
+			a {
+				display: block;
+				padding: 0 20px;
+			}
+		}
+	}
+
+	//主体广告区域
+	.banner {
+		img {
+			width: 100%;
+		}
+	}
+
+	//新闻列表
+	.news_list {
+		height: 170px;
+		border-bottom: 1px solid #ccc;
+
+		.news_wrap {
+			width: 980px;
+			height: 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			dl {
+				
+				height: 100%;
+				padding-top: 20px;
+				box-sizing: border-box;
+			}
+
+			dt {
+				font-size: 20px;
+				margin-bottom: 20px;
+				font-weight: 700;
+			}
+
+			dd {
+				height: 35px;
+			}
+		}
+	}
+
+	//新闻提示
+	.news_tips {
+		padding: 10px 0px;
+		border-bottom: 1px solid #ccc;
+		.tips_wrap {
+			width: 980px;
+			margin: 0 auto;
+			overflow: hidden;
+			p {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	//特别推荐
+	.spec_recommend {
+		padding: 10px 0px;
+		background: url("../images/box-style-bg.png");
+
+		.recommend_wrap {
+			width: 980px;
+			margin: 0 auto;
+
+			.recommend_title {
+				height: 50px;
+				border-bottom: 1px solid #ccc;
+
+				li {
+					float: left;
+					line-height: 50px;
+				}
+
+				a {
+					display: block;
+					padding: 0 20px;
+				}
+
+				a:hover {
+					border-bottom: 1px solid red;
+				}
+			}
+
+			.news_tip {
+				margin-top: 20px;
+				height: 40px;
+				line-height: 40px;
+				background-color: #fff;
+				position: relative;
+				padding-left: 30px;
+			}
+
+			.news_tip::after {
+				content: "";
+				display: block;
+				border-width: 10px;
+				border-style: solid;
+				border-color: transparent  transparent #fff transparent;
+				position: absolute;
+				left: 30px;
+				top: -20px;
+			}
+
+
+			//推荐条目
+			.recommend_items {
+				
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.item {
+					margin-top: 10px;
+					width: 33%;
+					height: 148px;
+					background-color: #e61e25;
+					padding: 10px;
+					box-sizing: border-box;
+					display: flex;
+					border-radius: 5px;
+					
+				}
+
+				.left_item::after {
+					content: "";
+					display: block;
+					width: 12px;
+					height: 12px;
+					background-color: #f0f0f0;
+					position: absolute;
+					border-radius: 50%;
+					right: -6px;
+					top: -15px;
+				}
+
+				.left_item::before {
+					content: "";
+					display: block;
+					width: 12px;
+					height: 12px;
+					background-color: #f0f0f0;
+					position: absolute;
+					border-radius: 50%;
+					right: -6px;
+					bottom: -15px;
+				}
+
+				.left_item {
+					padding: 0 5px;
+					flex:1;
+					height: 100%;
+					float: left;
+					border-right: 1px dashed #ccc;
+					position: relative;
+					p:nth-child(1) {
+					    color: #fff;
+					    font-weight: 700;
+					}
+
+					p:nth-child(2) {
+						opacity: 0.5;
+						color: #fff;
+						font-size: 12px;
+						margin-top: 10px;
+						overflow: hidden;
+					}
+
+					p:nth-child(3) {
+						font-size: 16px;
+						color: #fff;
+						font-weight: 700;
+						margin-top: 10px;
+						overflow: hidden;
+					}
+					p:nth-child(4) {
+						font-size: 12px;
+						color: #fff;
+						margin-top: 10px;
+						overflow: hidden;
+						opacity: 0.5;
+					}
+
+					p:nth-child(5) {
+						font-size: 16px;
+						color: #fff;
+						margin-top: 10px;
+						font-weight: 700;
+					}
+				}
+
+				.right_item {
+					width: 110px;
+					height: 100%;
+					float: right;
+					text-align: center;
+
+					p:nth-child(1) {
+						margin-top: 20px;
+						font-size: 30px;
+						color: #fff;
+					}
+
+					p:nth-child(2) {
+						margin-top: 20px;
+						color: #fff;
+					}
+				}
+
+			}
+
+			.recommend_items::after {
+				content: "";
+				display: block;
+				width: 33%;
+				height: 148px;
+			}
+		}
+	}
+}
+
+//如果是平板设备
+@media only screen and (max-width: 980px) {
+	.m_body {
+		
+		.fix_bar {
+			display: none;
+		}
+
+		//顶部导航
+		.top_header {
+			.top_wrap {
+				max-width: 750px;
+				margin: 0 auto;
+				li:first-child {
+					display: none;
+				}
+			}
+		}
+		//主体导航
+		.top_nav {
+			.new_wrap {
+				width: 750px;
+				a {
+					padding: 0 17px;
+				}
+				li:last-child {
+					display: none;
+				}
+			}
+		}
+		//新闻列表
+		.news_list {
+			.news_wrap {
+				width: 750px;
+			}
+		}
+
+		//新闻提示
+		.news_tips {
+			.tips_wrap {
+				width: 750px;
+			}
+		}
+
+		//特别推荐
+		.spec_recommend {
+			.recommend_wrap {
+				width: 750px;
+				.recommend_items {
+
+					.item {
+						 width: 49%;
+					}
+				}
+
+				.recommend_items::after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+//如果是手机设备
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+		.m_body {
+			
+			// 顶部固定导航
+			.fix_bar {
+				display: block;
+				width: 100%;
+				height: 57px;
+				line-height: 57px;
+				background-color: #f8f8f8;
+				padding: 0 20px;
+				position: fixed;
+				left: 0;
+				top: 0;
+				box-sizing: border-box;
+
+				a:nth-child(1) {
+					padding-left: 26px;
+					position: relative;
+				}
+				a:nth-child(1)::before {
+					content: "";
+					width: 26px;
+					height: 28px;
+					display: block;
+					background: url(../images/menu.png) no-repeat;
+					position: absolute;
+					left: 0;
+					top: 14px;
+				}	
+			}
+			
+			// 顶部导航
+			.top_header {
+				display: none;
+			}
+
+			.top_nav {
+				display: none;
+			}
+			
+			//广告区域
+			.banner {
+				margin-top: 57px;
+			}
+			.news_list {
+				display: none;
+			}
+
+			.news_tips {
+				.tips_wrap {
+					width: 100%;
+					p {
+						margin-top: 10px;
+						padding: 0 10px;
+					}
+				}
+			}
+			// 特别推荐
+			.spec_recommend {
+
+				.recommend_wrap {
+					width: 100%;
+					.recommend_title {
+						overflow: scroll;
+						ul {
+							width: 750px;
+						}
+					}
+
+					.news_tip {
+						margin: 10px 10px 0px;
+						border-radius: 5px;
+					}
+					.recommend_items {
+						.item {
+							width: 100%;
+						}
+					}
+					
+				}
+			}
+		}
+}

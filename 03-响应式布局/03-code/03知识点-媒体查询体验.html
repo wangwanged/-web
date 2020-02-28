@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        /* @media only screen and (width: 320px) {
+            .box {
+                width: 100%;
+                height: 200px;
+                background-color: red;
+            }
+        }
+
+        @media only screen and (width: 768px) {
+            .box {
+                 width: 100%;
+                 height: 200px;
+                 background-color: pink;
+            }
+        } */
+
+
+
+        /* 要求div在横屏模式下是blue */
+        /* div在竖屏模式下是yellow */
+
+        @media screen and (orientation: landscape) {
+            .box {
+                 width: 100%;
+                 height: 200px;
+                 background-color: blue;
+            }
+        }
+
+
+        @media screen and (orientation: portrait) {
+             .box {
+                width: 100%;
+                height: 200px;
+                background-color: yellow;
+             }
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div class="box"></div>
+    
+    <!-- 使用媒体查询的方式实现如下效果：
+    1. 页面中有一个div
+    2. 让div在ip4设备中的背景颜色是红色
+    3. 让div在ipad设备中的背景颜色是粉色 -->
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+
+// 匹配设备屏幕最小显示宽度320px
+@media only screen and (width: 320px) {
+	html {
+		font-size: 16px;
+		height: 100%;
+		background-color: #f7f4f1;
+	}
+	body {
+		height: 100%;
+	}
+}
+
+// 匹配设备屏幕大小是 360像素
+@media only screen and (width: 360px) {
+	html {
+		font-size: 18px;
+		height: 100%;
+		background-color: #f7f4f1;
+	}
+
+	body {
+		height: 100%;
+	}
+}
+
+@media only screen and (width: 768px){
+	html {
+		font-size: 38.4px;
+		height: 100%;
+		background-color: #f7f4f1;
+	}
+
+	body {
+		height: 100%;
+	}
+}
+
+.viewport {
+		width: 100%;
+		height: 100%;
+		// 顶部区域
+		.top_header {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+
+
+		// 主体区域
+		.m_content {
+			height: 100%;
+			padding: 0rem 24 / 32rem;
+			
+			.public_box {
+				margin-top: 28/32rem;
+				margin-bottom: 28/32rem;
+				
+				// 标题
+				.title {
+					height: 60 /32rem;
+					h3 {
+						font-size: 28 / 32rem;
+						color: #000;
+					}
+					span {
+						font-size: 28 /32rem;
+						color: #888;
+					}
+				}
+				
+				// 添加优惠券
+				.add_YH {
+					height: 215 / 32rem;
+					width: 100%;
+					border: 1/32rem dashed #dedede;
+					background-color: #fff;
+					text-align: center;
+
+					.icon-add {
+						margin-top: 35/32rem;
+						margin-bottom: 15/32rem;
+						font-size: 107/32rem;
+						color: #aeaeae;
+					}
+
+					a {
+						font-size: 26/32rem;
+						color: #aeaeae;
+					}
+				}
+			}
+
+			// 提示
+			.tips {
+				margin-top: 100/32rem;
+
+				h4 {
+					color: #b3b2b1;
+					font-size: 24/32rem;
+				}
+
+				p {
+					color: #b3b2b1;
+					font-size: 24/32rem;
+					margin-top: 18/32rem;
+				}
+			}
+		}
+}
+
+
+

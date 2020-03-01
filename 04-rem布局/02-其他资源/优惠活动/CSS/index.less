@@ -1,0 +1,150 @@
+@import 'base.less';
+@import 'adaper.less';
+
+
+.m_body {
+	width: 100%;
+	
+	// 顶部
+	.top_header {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	
+	.content {
+		width: 100%;
+		padding: 30/32rem  24/32rem;
+		box-sizing: border-box;
+		.item {
+			width: 100%;
+			margin-bottom: 30 / 32rem;
+			.title {
+				height: 56/32rem;
+				font-size: 26 / 32rem;
+			}
+
+			.l_text {
+				float: left;
+			}
+			.r_text {
+				float: right;
+			}
+
+			.add {
+				width: 100%;
+				height: 217 / 32rem;
+				border: 1 / 32rem dashed #ccc;
+				background-color: #fff;
+				text-align: center;
+				font-size: 26 / 32rem;
+				.icon-add {
+					 display: block;
+					 font-size: 105 / 32rem;
+					 margin-top: 35/32rem;
+					 margin-bottom: 10 / 32rem;
+				}
+			}
+		}
+
+
+		// 优惠券
+		.cards {
+			width: 100%;
+			height: 315 / 32rem;
+			background-color: #55bc75;
+			border-radius: 10/32rem;
+			margin-bottom: 20/32rem;
+
+			.card_show {
+				width: 100%;
+				height: 235 / 32rem;
+				background-image: url("../images/icon.png");
+				background-repeat: repeat-x;
+				background-size: 24/32rem 8 / 32rem;
+				background-position: bottom;
+				overflow: hidden;
+				position: relative;
+
+				p {
+					width: 100%;
+					padding: 0 26/32rem;
+					box-sizing: border-box;
+					color: #fff;
+				}
+
+				p:nth-child(1) {
+					font-size: 46/32rem;
+					margin-top: 34/32rem;
+				}
+				p:nth-child(2) {
+					font-size: 26/32rem;
+					margin-top: 20/32rem;
+					color: #a7e6bb;
+				}
+				p:nth-child(3) {
+					font-size: 26/32rem;
+					margin-top: 20/32rem;
+
+					a {
+						display: block;
+						float: right;
+						padding: 5/32rem;
+						background-color: rgba(0,0,0,.5);
+						color: #fff;
+					}
+				}
+
+				.sell {
+					display: block;
+					width: 146/32rem;
+					height: 146/32rem;
+					background: url("../images/sale.png") no-repeat;
+					position: absolute;
+					right: 0;
+					top: 0;
+					background-size: 146/32rem 146/32rem;
+				}
+			}
+
+			.btns {
+				height: 80/32rem;
+				background-color: #fff;
+				display: flex;
+				align-items: center;
+
+				a {
+					flex: 1;
+					text-align: center;
+					line-height: 80/32rem;
+				}
+
+				.line {
+					width: 2px;
+					height: 48/32rem;
+					background-color: #ccc;
+				}
+			}
+		}
+	}
+
+
+	.tips {
+		width: 100%;
+		padding: 30/32rem  24/32rem;
+		box-sizing: border-box;
+
+		font-size: 26/32rem;
+
+		h4 {
+			font-size: 26/32rem;
+		}
+
+		p {
+			margin-top: 20/32rem;
+		}
+	}
+}

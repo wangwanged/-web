@@ -1,0 +1,126 @@
+html {
+  background-color: #f7f4f1;
+}
+.main_body {
+  width: 100%;
+}
+.main_body .top_img {
+  width: 100%;
+}
+.main_body .top_img img {
+  width: 100%;
+}
+.main_body .content {
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.78125rem;
+  box-sizing: border-box;
+}
+.main_body .content .public {
+  width: 100%;
+  margin-bottom: 0.9375rem;
+}
+.main_body .content .public .title {
+  width: 100%;
+  height: 1.78125rem;
+}
+.main_body .content .public .title h4 {
+  float: left;
+  font-size: 0.875rem;
+}
+.main_body .content .public .title span {
+  float: right;
+}
+.main_body .content .public .btn {
+  width: 100%;
+  height: 6.75rem;
+  border: 1px dashed #dedede;
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
+}
+.main_body .content .public .btn .icon-add {
+  font-size: 3.4375rem;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.46875rem;
+}
+.main_body .content .card {
+  width: 100%;
+  margin-bottom: 0.625rem;
+}
+.main_body .content .card .top_card {
+  height: 7.375rem;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background: #55bc75 url('../images/icon.png') repeat-x bottom;
+  background-size: 0.75rem 0.25rem;
+  overflow: hidden;
+  position: relative;
+}
+.main_body .content .card .top_card h4 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 0.78125rem;
+  margin-top: 1rem;
+}
+.main_body .content .card .top_card .p2 {
+  font-size: 0.8125rem;
+  color: #bdf3ce;
+  margin-left: 0.78125rem;
+  margin-top: 0.5625rem;
+}
+.main_body .content .card .top_card .p3 {
+  font-size: 0.625rem;
+  color: #fff;
+  margin-left: 0.78125rem;
+  margin-top: 1.5625rem;
+}
+.main_body .content .card .top_card img {
+  position: absolute;
+  right: -4px;
+  top: -13px;
+  width: 4.5625rem;
+}
+.main_body .content .card .top_card a {
+  position: absolute;
+  right: 0.84375rem;
+  bottom: 0.9375rem;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.main_body .content .card .bot_card {
+  width: 100%;
+  height: 2.625rem;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+}
+.main_body .content .card .bot_card a {
+  width: 50%;
+  height: 100%;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 2.625rem;
+}
+.main_body .content .card .bot_card .line {
+  width: 2px;
+  height: 1.5rem;
+  background-color: #e8e2d9;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -1px;
+  margin-top: -0.75rem;
+}
+.main_body ul {
+  margin-left: 0.75rem;
+  margin-top: 3.65625rem;
+}
+.main_body ul li {
+  margin-bottom: 0.5625rem;
+}

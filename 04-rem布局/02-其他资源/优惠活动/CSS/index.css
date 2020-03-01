@@ -1,0 +1,177 @@
+body,
+p,
+ul,
+dl,
+ol,
+dt,
+dd,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #666;
+  font-family: "微软雅黑";
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+img,
+input {
+  border: 0 none;
+  outline-style: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media only screen and (min-width: 360px) {
+  html {
+    background-color: #f5f5f5;
+  }
+}
+@media only screen and (width: 320px) {
+  html {
+    font-size: 16px;
+    background-color: #f5f5f5;
+  }
+}
+@media only screen and (width: 360px) {
+  html {
+    font-size: 18px;
+    background-color: #f5f5f5;
+  }
+}
+.m_body {
+  width: 100%;
+}
+.m_body .top_header {
+  width: 100%;
+}
+.m_body .top_header img {
+  width: 100%;
+}
+.m_body .content {
+  width: 100%;
+  padding: 0.9375rem 0.75rem;
+  box-sizing: border-box;
+}
+.m_body .content .item {
+  width: 100%;
+  margin-bottom: 0.9375rem;
+}
+.m_body .content .item .title {
+  height: 1.75rem;
+  font-size: 0.8125rem;
+}
+.m_body .content .item .l_text {
+  float: left;
+}
+.m_body .content .item .r_text {
+  float: right;
+}
+.m_body .content .item .add {
+  width: 100%;
+  height: 6.78125rem;
+  border: 0.03125rem dashed #ccc;
+  background-color: #fff;
+  text-align: center;
+  font-size: 0.8125rem;
+}
+.m_body .content .item .add .icon-add {
+  display: block;
+  font-size: 3.28125rem;
+  margin-top: 1.09375rem;
+  margin-bottom: 0.3125rem;
+}
+.m_body .content .cards {
+  width: 100%;
+  height: 9.84375rem;
+  background-color: #55bc75;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.625rem;
+}
+.m_body .content .cards .card_show {
+  width: 100%;
+  height: 7.34375rem;
+  background-image: url("../images/icon.png");
+  background-repeat: repeat-x;
+  background-size: 0.75rem 0.25rem;
+  background-position: bottom;
+  overflow: hidden;
+  position: relative;
+}
+.m_body .content .cards .card_show p {
+  width: 100%;
+  padding: 0 0.8125rem;
+  box-sizing: border-box;
+  color: #fff;
+}
+.m_body .content .cards .card_show p:nth-child(1) {
+  font-size: 1.4375rem;
+  margin-top: 1.0625rem;
+}
+.m_body .content .cards .card_show p:nth-child(2) {
+  font-size: 0.8125rem;
+  margin-top: 0.625rem;
+  color: #a7e6bb;
+}
+.m_body .content .cards .card_show p:nth-child(3) {
+  font-size: 0.8125rem;
+  margin-top: 0.625rem;
+}
+.m_body .content .cards .card_show p:nth-child(3) a {
+  display: block;
+  float: right;
+  padding: 0.15625rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.m_body .content .cards .card_show .sell {
+  display: block;
+  width: 4.5625rem;
+  height: 4.5625rem;
+  background: url("../images/sale.png") no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-size: 4.5625rem 4.5625rem;
+}
+.m_body .content .cards .btns {
+  height: 2.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.m_body .content .cards .btns a {
+  flex: 1;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.m_body .content .cards .btns .line {
+  width: 2px;
+  height: 1.5rem;
+  background-color: #ccc;
+}
+.m_body .tips {
+  width: 100%;
+  padding: 0.9375rem 0.75rem;
+  box-sizing: border-box;
+  font-size: 0.8125rem;
+}
+.m_body .tips h4 {
+  font-size: 0.8125rem;
+}
+.m_body .tips p {
+  margin-top: 0.625rem;
+}

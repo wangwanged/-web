@@ -1,0 +1,150 @@
+
+// 定义一个变量用来保存将UI图分为对应的份数
+@UI_num: 20;
+
+html {
+    background-color: #f7f4f1;
+}
+// 主体盒子
+.main_body {
+
+    width: 100%;
+    // 顶部第一个盒子
+    .top_img {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    //内容大盒子
+    .content {
+        width: 100%;
+        padding-left: 24rem / (640/@UI_num);
+        padding-right: 24rem /(640/@UI_num);
+        padding-top: 25rem / (640/@UI_num);
+        box-sizing: border-box;    
+        .public {
+            width: 100%;
+            
+            margin-bottom: 30rem / (640/@UI_num);
+
+            .title {
+                width: 100%;
+                height: 57rem/ (640/@UI_num);
+
+                h4 {
+                    float: left;
+                    font-size: 28rem/(640/@UI_num);
+                }
+                span {
+                    float: right;
+                }
+            }
+
+            .btn {
+                width: 100%;
+                height: 216rem/(640/@UI_num);
+                border: 1px dashed #dedede;
+                box-sizing: border-box;
+                background-color: #fff;
+                text-align: center;
+
+                .icon-add {
+                    font-size: 110rem / (640/@UI_num);
+                    display: block;
+                    margin-top: 32rem / (640/@UI_num);
+                    margin-bottom: 15rem / (640/@UI_num);
+                }
+            }
+        }
+
+
+        // 卡片
+        .card {
+            width: 100%;
+            margin-bottom: 20rem / (640/@UI_num);
+            .top_card {
+                height: 236rem /(640/@UI_num);
+                width: 100%;
+                border-radius: 5px 5px 0 0;
+                background: #55bc75 url('../images/icon.png') repeat-x bottom;
+                // 改变背景图片大小
+                background-size: 24rem/(640/@UI_num) 8rem/(640/@UI_num);
+                overflow: hidden;
+                position: relative;
+                h4 {
+                    color: #fff;
+                    font-size: 48rem / (640/@UI_num);
+                    font-weight: 700;
+                    margin-left: 25rem / (640/@UI_num);
+                    margin-top: 32rem / (640/@UI_num);
+                }
+
+                .p2 {
+                    font-size: 26rem / (640/@UI_num);
+                    color: #bdf3ce;
+                    margin-left: 25rem / (640/@UI_num);
+                    margin-top: 18rem / (640/@UI_num);
+                }
+
+                .p3 {
+                    font-size: 20rem / (640/@UI_num);
+                    color: #fff;
+                    margin-left: 25rem / (640/@UI_num);
+                    margin-top: 50rem / (640/@UI_num);
+                }
+
+
+                img {
+                    position: absolute;
+                    right: -4px;
+                    top: -13px;
+                    width: 146rem / (640/@UI_num);
+                }
+
+                a {
+                    position: absolute;
+                    right: 27rem / (640/@UI_num);
+                    bottom: 30rem / (640/@UI_num);
+                    padding: 5px;
+                    background-color: rgba(0,0,0,.3);
+                    color: #fff;
+                }
+            }
+            .bot_card {
+                width: 100%;
+                height: 84rem / (640/@UI_num);
+                background-color: #fff;
+                border-radius: 0 0 5px 5px;
+                position: relative;
+                a {
+                    width: 50%;
+                    height: 100%;
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    line-height: 84rem / (640/@UI_num);
+                }
+                .line {
+                    width: 2px;
+                    height: 48rem / (640/@UI_num);
+                    background-color: #e8e2d9;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: -1px;
+                    margin-top: -24rem / (640/@UI_num);
+                }
+            }
+        }
+    }
+
+    // 底部列表
+    ul {
+      margin-left: 24rem / (640/@UI_num);
+      margin-top: 117rem / (640/@UI_num);
+      li {
+          margin-bottom: 18rem / (640/@UI_num);
+      }
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding:  0;
+		}
+		h1 {
+			text-align: center;
+			perspective: 1000px
+		}
+		.box {
+			margin: 100px auto;
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			transition: all 1s linear;
+		}
+		.box:hover {
+			transform: scale(1.5, 1.5);
+		}
+	</style>
+</head>
+<body>
+	<h1>轻轻的将你的鼠标放到pink盒子上</h1>
+	<div class="box"></div>
+</body>
+</html>

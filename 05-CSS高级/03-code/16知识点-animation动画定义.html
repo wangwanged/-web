@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 调用动画 属性合写的方式*/
+            /* animation: move  1s; */
+
+            /* 动画animation属性详解 */
+            animation-name: move;
+
+            /* 设置动画执行时间 */
+            animation-duration: 1s;
+
+            /* 设置动画执行次数，默认执行1次 
+                infinite  无限次执行
+            */
+            animation-iteration-count: infinite;
+
+
+            /* 设置动画在返回的时候也有动画效果【动画逆播】 */
+            animation-direction: alternate;
+
+            /* 设置动画速度
+
+               默认值： ease  【速度由快到慢】
+
+                      linear 【匀速的】
+
+
+                      ease-in 【加速效果】
+
+                      ease-out【减速状态】
+
+                      ease-in-out 【先快后慢】
+            */
+            animation-timing-function: linear;
+
+
+            /* 设置动画延时执行 */
+            animation-delay: 2s;
+
+
+
+            /* 设置动画在结束状态停止
+            
+                前提： 动画执行的次数不能是无限次执行
+            */
+            animation-fill-mode: forwards;
+
+        }
+
+        .box:hover {
+
+            /* 暂停动画 paused */
+            animation-play-state: paused;
+        }
+        /* 定义一个动画 */
+        @keyframes  move {
+            /* 动画开始的样式 */
+            from {
+                transform: translateX(0);
+            }
+            /* 动画结束时候的样式 */
+            to {
+                transform: translateX(800px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 让div向右移动400px -->
+    <div class="box"></div>
+</body>
+</html>

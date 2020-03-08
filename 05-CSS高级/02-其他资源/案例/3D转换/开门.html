@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+        	
+        	  * {
+        	  	 margin: 0;
+        	  	 padding: 0;
+        	  }
+        	  .door {
+        	  	 width: 400px;
+        	  	 height: 300px;
+        	  	 border: 1px solid #ccc;
+        	  	 margin: 50px auto;
+				 perspective: 1000px;
+        	  }
+        	  .left {
+        	  	 width: 50%;
+        	  	 height: 100%;
+        	  	 background-color: pink;
+        	  	 float: left;
+        	  	 transform-origin: left;
+        	  	 transition: all 1s linear;
+        	  }
+
+        	  .right {
+        	  	 width: 50%;
+        	  	 height: 100%;
+        	  	 background-color: pink;
+        	  	 float: right;
+        	  	 transform-origin: right;
+        	  	 transition: all 1s linear;
+        	  }
+        	  .door:hover .left {
+        	  	    transform: rotateY(80deg);
+        	  }
+
+        	  .door:hover .right {
+        	  	   transform: rotateY(-80deg);
+        	  }
+        </style>
+    </head>
+    <body>
+    	    <div class="door">
+    	    	<div class="left"></div>
+    	    	<div class="right"></div>
+    	    </div>
+    </body>
+</html>

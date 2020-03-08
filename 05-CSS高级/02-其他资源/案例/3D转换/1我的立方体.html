@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            margin: 100px auto;
+            /* perspective: 1000px; */
+            transform-style: preserve-3d;
+            transform: rotateX(30deg) rotateY(30deg);
+            animation: rotate 3s infinite linear;
+        }
+
+        .public {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            background-color: transparent;
+            margin-top: 10px;
+
+        }
+
+        .small1 {
+            float: left;
+            width: 75px;
+            height: 75px;
+            margin-left: 19px;
+            margin-top: 19px;
+            background-color: yellow;
+            text-align: center;
+            padding-top: 25px;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+        .small2 {
+            float: left;
+            width: 75px;
+            height: 75px;
+            margin-left: 19px;
+            margin-top: 19px;
+            background-color: green;
+            text-align: center;
+            padding-top: 25px;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+        .small3 {
+            float: left;
+            width: 75px;
+            height: 75px;
+            margin-left: 19px;
+            margin-top: 19px;
+            background-color: blue;
+            text-align: center;
+            padding-top: 25px;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+        .small4 {
+            float: left;
+            width: 75px;
+            height: 75px;
+            margin-left: 19px;
+            margin-top: 19px;
+            background-color: red;
+            text-align: center;
+            padding-top: 25px;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+        .small5 {
+            float: left;
+            width: 75px;
+            height: 75px;
+            margin-left: 19px;
+            margin-top: 19px;
+            background-color: pink;
+            text-align: center;
+            padding-top: 25px;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+        .small6 {
+            float: left;
+            width: 75px;
+            height: 75px;
+            margin-left: 19px;
+            margin-top: 19px;
+            background-color: orange;
+            text-align: center;
+            padding-top: 25px;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+
+
+        .left {
+            transform: rotateY(90deg) translateZ(150px);
+        }
+
+        .right {
+
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+
+        .top {
+
+            transform: rotateX(90deg) translateZ(150px);
+        }
+
+        .bottom {
+
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+
+        .before {
+
+            transform: translateZ(150px);
+
+        }
+
+        .after {
+
+            transform: translateZ(-150px);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateX(0) rotateY(0)
+            }
+
+            to {
+                transform: rotateX(360deg) rotateY(360deg)
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="public left">
+            <div class="small1">1</div>
+            <div class="small1">2</div>
+            <div class="small1">3</div>
+            <div class="small1">4</div>
+            <div class="small1">5</div>
+            <div class="small1">6</div>
+            <div class="small1">7</div>
+            <div class="small1">8</div>
+            <div class="small1">9</div>
+
+        </div>
+        <div class="public right">
+            <div class="small2">1</div>
+            <div class="small2">2</div>
+            <div class="small2">3</div>
+            <div class="small2">4</div>
+            <div class="small2">5</div>
+            <div class="small2">6</div>
+            <div class="small2">7</div>
+            <div class="small2">8</div>
+            <div class="small2">9</div>
+        </div>
+        <div class="public top">
+            <div class="small3">1</div>
+            <div class="small3">2</div>
+            <div class="small3">3</div>
+            <div class="small3">4</div>
+            <div class="small3">5</div>
+            <div class="small3">6</div>
+            <div class="small3">7</div>
+            <div class="small3">8</div>
+            <div class="small3">9</div>
+        </div>
+        <div class="public bottom">
+            <div class="small4">1</div>
+            <div class="small4">2</div>
+            <div class="small4">3</div>
+            <div class="small4">4</div>
+            <div class="small4">5</div>
+            <div class="small4">6</div>
+            <div class="small4">7</div>
+            <div class="small4">8</div>
+            <div class="small4">9</div>
+        </div>
+        <div class="public before">
+            <div class="small5">1</div>
+            <div class="small5">2</div>
+            <div class="small5">3</div>
+            <div class="small5">4</div>
+            <div class="small5">5</div>
+            <div class="small5">6</div>
+            <div class="small5">7</div>
+            <div class="small5">8</div>
+            <div class="small5">9</div>
+        </div>
+        <div class="public after">
+            <div class="small6">1</div>
+            <div class="small6">2</div>
+            <div class="small6">3</div>
+            <div class="small6">4</div>
+            <div class="small6">5</div>
+            <div class="small6">6</div>
+            <div class="small6">7</div>
+            <div class="small6">8</div>
+            <div class="small">9</div>
+        </div>
+    </div>
+</body>
+
+</html>

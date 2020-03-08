@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clock {
+             width: 300px;
+             height: 300px;
+             border: 2px solid #ccc;
+             margin: 150px auto;
+             border-radius: 50%;
+             position: relative;
+        }
+
+        .line {
+            height: 100%;
+            width: 2px;
+            background-color: #000;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+
+        .line:nth-child(2) {
+            transform: rotate(30deg);
+        }
+
+        .line:nth-child(3) {
+            transform: rotate(60deg);
+        }
+
+        .line:nth-child(4) {
+            transform: rotate(90deg);
+        }
+
+        .line:nth-child(5) {
+            transform: rotate(120deg);
+        }
+
+        .line:nth-child(6) {
+            transform: rotate(150deg);
+        }
+
+        .cover {
+            width: 280px;
+            height: 280px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+
+        .h {
+            width: 6px;
+            height: 110px;
+            background-color: pink;
+            position: absolute;
+            left: 50%;
+            top: 30px;
+            transform: translate(-50%, 0);
+
+             /* 修改一下旋转圆点位置 */
+             transform-origin: bottom;
+
+             /* 调用动画 */
+             animation: rotate 43200s linear infinite;
+        }
+
+
+        .m {
+            width: 4px;
+            height: 120px;
+            background-color: blue;
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translate(-50%, 0);
+
+              /* 修改一下旋转圆点位置 */
+              transform-origin: bottom;
+
+              /* 调用动画 */
+              animation: rotate 3600s linear infinite;
+        }
+
+        .s {
+             width: 2px;
+             height: 130px;
+             background-color: yellow;
+             position: absolute;
+             left: 50%;
+             top: 10px;
+             transform: translate(-50%, 0);
+
+             /* 修改一下旋转圆点位置 */
+             transform-origin: bottom;
+
+             /* 调用动画 */
+             animation: rotate  60s  linear  infinite;
+        }
+        
+
+        .dotted {
+            width: 15px;
+            height: 15px;
+            background-color: #000;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+
+        /* 定义动画 */
+        @keyframes  rotate {
+
+             from {
+                transform: rotate(0deg);
+             }
+
+             to {
+                transform: rotate(360deg);
+             }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- 1. 先画一个圆及里面的刻度线（先定位后旋转实现） -->
+    <div class="clock">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+
+        <div class="cover">
+            <div class="h"></div>
+            <div class="m"></div>
+            <div class="s"></div>
+
+            <!-- 小圆点 -->
+            <div class="dotted"></div>
+        </div>
+    </div>
+
+    <!-- 2. 再准备 时， 分， 秒 三个盒子（水平方向都是居中的，垂直方向没有居中） -->
+
+    <!-- 3  再准备一个小圆点 （水平要居中和垂直也居中） -->
+
+    <!-- 4  定义一个动画  （旋转动画  -》 0 - 360 --》 转无限次 ） -->
+
+
+</body>
+</html>

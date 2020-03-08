@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 200px auto;
+
+            transition: all 1s;
+        }
+
+        .box:hover {
+            /* 让元素放大1.2倍 */
+            /* transform: scale(1.2, 1.2); */
+
+             /* 让元素旋转360deg */
+            /* transform: rotate(360deg); */
+
+            /* 合写的方式 */
+            /* transform:scale(1.2, 1.2) rotate(360deg); */
+
+             transform:scale(1.2) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    
+      <div class="box"></div>
+</body>
+</html>

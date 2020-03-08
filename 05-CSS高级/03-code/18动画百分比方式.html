@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 100px auto;
+
+
+            animation: rotate 10s forwards;
+        }
+
+        /* 动画百分方式 */
+
+        @keyframes  rotate {
+
+            /* 百分比表示的是相对当前动画整个执行时间的 */
+             0% {
+                  transform: rotate(0deg);
+             }
+
+             50% {
+                 background-color: blue;
+             }
+
+             100% {
+                 transform: rotate(360deg);
+                 background-color: blue;
+             }
+
+
+
+
+
+            /* from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            } */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+</body>
+</html>

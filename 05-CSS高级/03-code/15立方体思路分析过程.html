@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+              width: 300px;
+              height: 300px;
+              margin: 100px auto;
+              position: relative;
+              /* perspective: 1000px; */
+              /* 将平面图形转化为立体图形 */
+              transform-style: preserve-3d;
+              transform: rotateY(30deg)  rotateX(30deg);
+        }
+
+        .public {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .left {
+            background-color: red;
+            transform: rotateY(90deg)  translateZ(-150px);
+        }
+        .right {
+            background-color: blue;
+            transform: rotateY(90deg)  translateZ(150px);
+        }
+        .top {
+            background-color: pink;
+            transform: rotateX(90deg) translateZ(150px);
+        }
+        .bottom {
+            background-color: green;
+            transform: rotateX(90deg) translateZ(-150px);
+        }
+        .before {
+            background-color: yellow;
+
+            transform: translateZ(150px);
+        }
+        .after {
+            background-color: #000;
+            transform: translateZ(-150px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 先准备6个盒子 -->
+    <div class="box">
+         <div class="public left"></div>
+         <div class="public right"></div>
+         <div class="public top"></div>
+         <div class="public bottom"></div>
+         <div class="public before"></div>
+         <div class="public after"></div>
+    </div>
+    <!-- 2. 将6个盒子重叠到一块 （定位） -->
+
+    <!-- 3. 具体在制作6个面
+    
+         左右面： 沿着Y轴旋转90deg,然后位移一半
+
+         上下面： 沿着X轴旋转90deg,然后位移一半
+
+         前后面： 位移一半
+
+    -->
+</body>
+</html>
